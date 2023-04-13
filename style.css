@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#1f325d, #ddd);
+}
+
+header {
+  position: fixed;
+  background-color: #07215d;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 10px 100px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #1f325d;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1f325d, transparent);
+  z-index: 1000;
+}
+
+section img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section img#moon {
+  mix-blend-mode: screen;
+  z-index: 11;
+}
+
+section img#hill {
+  z-index: 12;
+}
+
+#title {
+  position: absolute;
+  color: #e1d016;
+  margin-top: -200px;
+  white-space: nowrap;
+  font-size: 4vw;
+  z-index: 10;
+}
+
+.desc {
+  position: relative;
+  padding: 100px;
+  background: #1f325d;
+}
+
+.desc h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.desc p {
+  font-size: 1em;
+  color: #fff;
+}
